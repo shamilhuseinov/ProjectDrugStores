@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{D2D670A2-E737-447A-A928-25385AD86A21}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Program.cs">
+    <Files>
+      <File FileName="Presentation/Program.cs" Line="225" Column="59" />
+      <File FileName="Presentation/Services/OwnerService.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Services/DrugStoreService.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Services/DrugService.cs" Line="241" Column="21" />
+      <File FileName="Presentation/Services/DruggistService.cs" Line="242" Column="21" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Drugstores" expanded="True">
+            <Node name="Core" expanded="True">
+              <Node name="Constants" expanded="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="Extensions" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+            </Node>
+            <Node name="Data" expanded="True">
+              <Node name="Contents" expanded="True" />
+              <Node name="Repository" expanded="True">
+                <Node name="Abstract" expanded="True" />
+                <Node name="Concrete" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Presentation" expanded="True">
+              <Node name="Services" expanded="True">
+                <Node name="DrugService.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Presentation PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
