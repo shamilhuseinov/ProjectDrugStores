@@ -87,7 +87,7 @@ namespace Presentation.Services
 
                 _drugStoreRepository.Create(drugStore);
 
-                ConsoleHelper.WriteWithColor($"DrugStore is successfully created with Name: {drugStore.Name}, Address: {drugStore.Address}, ContactNumber: {drugStore.ContactNumber}, Email: {drugStore.Email},Owner Id: {drugStore.Owner.Id}, Owner Name: {drugStore.Owner.Name}", ConsoleColor.Green);
+                ConsoleHelper.WriteWithColor($"DrugStore has been created successfully with Name: {drugStore.Name}, Address: {drugStore.Address}, ContactNumber: {drugStore.ContactNumber}, Email: {drugStore.Email},Owner Id: {drugStore.Owner.Id}, Owner Name: {drugStore.Owner.Name}", ConsoleColor.Green);
 
             }
             else
@@ -218,7 +218,7 @@ namespace Presentation.Services
             var drugStores = _drugStoreRepository.GetAll();
             if (drugStores.Count==0)
             {
-                ConsoleHelper.WriteWithColor("There is no drugstore", ConsoleColor.Red);
+                ConsoleHelper.WriteWithColor("There is not any drugstore to get", ConsoleColor.Red);
             }
             else
             {
@@ -236,7 +236,7 @@ namespace Presentation.Services
 		{
 			if (_drugStoreRepository.GetAll().Count==0)
 			{
-				ConsoleHelper.WriteWithColor("There is no drugStore", ConsoleColor.Red);
+				ConsoleHelper.WriteWithColor("There is not any drugStore to get", ConsoleColor.Red);
 			}
 			else
 			{
@@ -320,14 +320,16 @@ namespace Presentation.Services
 
                     if (quantity < saleDrug.Count && quantity==1)
                     {
+                        var commonPrice = saleDrug.Price * quantity;
                         saleDrug.Count -= quantity;
-                        ConsoleHelper.WriteWithColor($"{quantity} drug is sold", ConsoleColor.Green);
+                        ConsoleHelper.WriteWithColor($"{quantity} drug is sold. Common price is {commonPrice}", ConsoleColor.Green);
                     }
 
                     if (quantity < saleDrug.Count && quantity!=1)
                     {
+                        var commonPrice = saleDrug.Price * quantity;
                         saleDrug.Count -= quantity;
-                        ConsoleHelper.WriteWithColor($"{quantity} drugs are sold", ConsoleColor.Green);
+                        ConsoleHelper.WriteWithColor($"{quantity} drugs are sold. Common price is {commonPrice}", ConsoleColor.Green);
                     }
 
                     if (quantity > saleDrug.Count)

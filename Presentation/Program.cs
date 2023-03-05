@@ -43,7 +43,7 @@ namespace Presentation
                 ConsoleHelper.WriteWithColor("4- Drugs", ConsoleColor.Yellow);
                 ConsoleHelper.WriteWithColor("0- Logout", ConsoleColor.Yellow);
 
-                ConsoleHelper.WriteWithColor("Choose your option", ConsoleColor.Cyan);
+                ConsoleHelper.WriteWithColor("Select your option", ConsoleColor.Cyan);
                 int option;
                 bool issucceeded = int.TryParse(Console.ReadLine(), out option);
                 if (!issucceeded)
@@ -91,7 +91,7 @@ namespace Presentation
                                 case (int)OwnerOptions.GoToMainMenu:
                                     goto MainMenuDescription;
                                 default:
-                                    ConsoleHelper.WriteWithColor("There is no option like that", ConsoleColor.Red);
+                                    ConsoleHelper.WriteWithColor("There is not any option like that", ConsoleColor.Red);
                                     goto OwnersOptionDescription;
                             }
                         }
@@ -112,7 +112,7 @@ namespace Presentation
                             issucceeded = int.TryParse(Console.ReadLine(), out drugStoresOption);
                             if (!issucceeded)
                             {
-                                ConsoleHelper.WriteWithColor("DrugStores option is not in a correct format", ConsoleColor.Red);
+                                ConsoleHelper.WriteWithColor("Your option is not in a correct format", ConsoleColor.Red);
                                 goto DrugStoresOptionDescription;
                             }
 
@@ -139,7 +139,7 @@ namespace Presentation
                                 case (int)DrugStoreOptions.GoToMainMenu:
                                     goto MainMenuDescription;
                                 default:
-                                    ConsoleHelper.WriteWithColor("There is no option like that", ConsoleColor.Red);
+                                    ConsoleHelper.WriteWithColor("There is not any option like that", ConsoleColor.Red);
                                     goto DrugStoresOptionDescription;
 
 
@@ -156,13 +156,13 @@ namespace Presentation
                             ConsoleHelper.WriteWithColor("5- Get All Druggists by Drug store", ConsoleColor.Yellow);
                             ConsoleHelper.WriteWithColor("0- GoToMainMenu", ConsoleColor.Yellow);
 
-                        DruggistDescription: ConsoleHelper.WriteWithColor("Select your option", ConsoleColor.Cyan);
+                            ConsoleHelper.WriteWithColor("Select your option", ConsoleColor.Cyan);
                             int druggistOption;
                             issucceeded = int.TryParse(Console.ReadLine(), out druggistOption);
                             if (!issucceeded)
                             {
-                                ConsoleHelper.WriteWithColor("Option is not in a correct format", ConsoleColor.Red);
-                                goto DruggistDescription;
+                                ConsoleHelper.WriteWithColor("Your option is not in a correct format", ConsoleColor.Red);
+                                goto DruggistsOptionDescription;
                             }
 
                             switch (druggistOption)
@@ -185,7 +185,7 @@ namespace Presentation
                                 case (int)DruggistOptions.GoToMainMenu:
                                     goto MainMenuDescription;
                                 default:
-                                    ConsoleHelper.WriteWithColor("There is no option like that", ConsoleColor.Red);
+                                    ConsoleHelper.WriteWithColor("There is not any option like that", ConsoleColor.Red);
                                     goto DruggistsOptionDescription;
                             }
 
@@ -206,7 +206,7 @@ namespace Presentation
                             issucceeded = int.TryParse(Console.ReadLine(), out drugOption);
                             if (!issucceeded)
                             {
-                                ConsoleHelper.WriteWithColor("Your option is not in a correct format", ConsoleColor.Yellow);
+                                ConsoleHelper.WriteWithColor("Your option is not in a correct format", ConsoleColor.Red);
                                 goto DrugOptionDescription;
                             }
 
@@ -233,7 +233,7 @@ namespace Presentation
                                 case (int)DrugOptions.GoToMainMenu:
                                     goto MainMenuDescription;
                                 default:
-                                    ConsoleHelper.WriteWithColor("There is no option like that", ConsoleColor.Red);
+                                    ConsoleHelper.WriteWithColor("There is not any option like that", ConsoleColor.Red);
                                     goto DrugOptionDescription;
                             }
 

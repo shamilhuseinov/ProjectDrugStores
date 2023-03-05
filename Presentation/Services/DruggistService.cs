@@ -217,7 +217,7 @@ namespace Presentation.Services
             }
             else
             {
-                ConsoleHelper.WriteWithColor("There is not any druggists to delete", ConsoleColor.Red);
+                ConsoleHelper.WriteWithColor("There is not any druggist to delete", ConsoleColor.Red);
             }
         }
 
@@ -226,7 +226,7 @@ namespace Presentation.Services
             var druggists = _druggistRepository.GetAll();
             if (druggists.Count==0)
             {
-                ConsoleHelper.WriteWithColor("There is not any druggists to get",ConsoleColor.Red);
+                ConsoleHelper.WriteWithColor("There is not any druggist to get",ConsoleColor.Red);
             }
             else
             {

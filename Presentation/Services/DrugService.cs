@@ -217,7 +217,7 @@ namespace Presentation.Services
 
                 _drugRepository.Delete(drug);
 
-                ConsoleHelper.WriteWithColor($"Drug(Id: {drug.Id}, Name: {drug.Name}, Price: {drug.Price}, DrugStore Id: {drug.DrugStore.Id}, DrugStore Name: {drug.DrugStore.Name}) has been deleted completely", ConsoleColor.Green);
+                ConsoleHelper.WriteWithColor($"Drug(Id: {drug.Id}, Name: {drug.Name}, Price: {drug.Price}, DrugStore Id: {drug.DrugStore.Id}, DrugStore Name: {drug.DrugStore.Name}) has been deleted successfully", ConsoleColor.Green);
             }
 		}
 
@@ -234,7 +234,7 @@ namespace Presentation.Services
             }
 			else
 			{
-                ConsoleHelper.WriteWithColor("There is not any drug", ConsoleColor.Red);
+                ConsoleHelper.WriteWithColor("There is not any drug to get", ConsoleColor.Red);
             }
         }
 

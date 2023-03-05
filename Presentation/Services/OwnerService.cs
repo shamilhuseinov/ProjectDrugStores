@@ -96,17 +96,17 @@ namespace Presentation.Services
                 var owner = _ownerRepository.Get(id);
                 if (owner is null)
                 {
-                    ConsoleHelper.WriteWithColor("There is no owner in this id", ConsoleColor.Red);
+                    ConsoleHelper.WriteWithColor("There is not any owner in this id", ConsoleColor.Red);
                     goto DeleteOwnerDescription;
                 }
 
                 _ownerRepository.Delete(owner);
 
-                ConsoleHelper.WriteWithColor($"{owner.Name} {owner.Surname} is deleted successfully", ConsoleColor.Green);
+                ConsoleHelper.WriteWithColor($"{owner.Name} {owner.Surname} has been deleted successfully", ConsoleColor.Green);
             }
             else
             {
-                ConsoleHelper.WriteWithColor("There is no owner to Delete", ConsoleColor.Red);
+                ConsoleHelper.WriteWithColor("There is not any owner to Delete", ConsoleColor.Red);
             }
         }
 
@@ -125,7 +125,7 @@ namespace Presentation.Services
             }
 			else
 			{
-                ConsoleHelper.WriteWithColor("There is no owner", ConsoleColor.Red);
+                ConsoleHelper.WriteWithColor("There is not any owner to get", ConsoleColor.Red);
             }
 
         }
