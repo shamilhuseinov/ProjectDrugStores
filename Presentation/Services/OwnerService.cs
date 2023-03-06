@@ -34,7 +34,7 @@ namespace Presentation.Services
 
 			_ownerRepository.Create(owner);
 
-            ConsoleHelper.WriteWithColor($"Id: {owner.Id}, Name: {owner.Name}, Surname: {owner.Surname} is successfully created", ConsoleColor.Green);
+            ConsoleHelper.WriteWithColor($"Id: {owner.Id}, Name: {owner.Name}, Surname: {owner.Surname} has been created successfully", ConsoleColor.Green);
 
 
         }
@@ -56,7 +56,7 @@ namespace Presentation.Services
                 var owner = _ownerRepository.Get(id);
                 if (owner is null)
                 {
-                    ConsoleHelper.WriteWithColor("There is no owner in this id", ConsoleColor.Red);
+                    ConsoleHelper.WriteWithColor("There is not any owner in this id", ConsoleColor.Red);
                     goto UpdateOwnerDescription;
                 }
 

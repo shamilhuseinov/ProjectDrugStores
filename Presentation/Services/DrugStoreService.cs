@@ -71,7 +71,7 @@ namespace Presentation.Services
                 var drugStoreOwner = _ownerRepository.Get(ownerId);
                 if (drugStoreOwner is null)
                 {
-                    ConsoleHelper.WriteWithColor("There is no owner in this Id", ConsoleColor.Red);
+                    ConsoleHelper.WriteWithColor("There is not any owner in this Id", ConsoleColor.Red);
                     goto OwnerIdDescription;
                 }
 
@@ -254,7 +254,7 @@ namespace Presentation.Services
 				var owner = _ownerRepository.Get(ownerId);
 				if (owner is null)
 				{
-                    ConsoleHelper.WriteWithColor("There is no owner in this id", ConsoleColor.Red);
+                    ConsoleHelper.WriteWithColor("There is not any owner in this id", ConsoleColor.Red);
 					goto OwnerIdDescription;
                 }
 
@@ -322,14 +322,14 @@ namespace Presentation.Services
                     {
                         var commonPrice = saleDrug.Price * quantity;
                         saleDrug.Count -= quantity;
-                        ConsoleHelper.WriteWithColor($"{quantity} drug is sold. Common price is {commonPrice}", ConsoleColor.Green);
+                        ConsoleHelper.WriteWithColor($"{quantity} drug has been sold. Common price is {commonPrice}", ConsoleColor.Green);
                     }
 
                     if (quantity < saleDrug.Count && quantity!=1)
                     {
                         var commonPrice = saleDrug.Price * quantity;
                         saleDrug.Count -= quantity;
-                        ConsoleHelper.WriteWithColor($"{quantity} drugs are sold. Common price is {commonPrice}", ConsoleColor.Green);
+                        ConsoleHelper.WriteWithColor($"{quantity} drugs have been sold. Common price is {commonPrice}", ConsoleColor.Green);
                     }
 
                     if (quantity > saleDrug.Count)

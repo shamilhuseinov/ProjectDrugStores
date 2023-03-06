@@ -1,7 +1,12 @@
 ﻿<Properties StartupConfiguration="{D2D670A2-E737-447A-A928-25385AD86A21}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Program.cs">
     <Files>
-      <File FileName="Presentation/Program.cs" Line="28" Column="1" />
+      <File FileName="Presentation/Program.cs" Line="23" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,7 +27,7 @@
             </Node>
             <Node name="Presentation" expanded="True">
               <Node name="Services" expanded="True">
-                <Node name="DrugService.cs" selected="True" />
+                <Node name="DrugStoreService.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -30,11 +35,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Presentation PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Presentation PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
