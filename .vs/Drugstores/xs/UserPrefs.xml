@@ -1,40 +1,23 @@
 ﻿<Properties StartupConfiguration="{D2D670A2-E737-447A-A928-25385AD86A21}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Program.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Services/DruggistService.cs">
     <Files>
-      <File FileName="Presentation/Program.cs" Line="23" Column="48" />
+      <File FileName="Presentation/Program.cs" />
+      <File FileName="Presentation/Services/DruggistService.cs" Line="158" Column="138" />
+      <File FileName="Data/Repository/Concrete/DruggistRepository.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Drugstores" expanded="True">
-            <Node name="Core" expanded="True">
-              <Node name="Constants" expanded="True" />
-              <Node name="Entities" expanded="True" />
-              <Node name="Extensions" expanded="True" />
-              <Node name="Helpers" expanded="True" />
-            </Node>
-            <Node name="Data" expanded="True">
-              <Node name="Contents" expanded="True" />
-              <Node name="Repository" expanded="True">
-                <Node name="Abstract" expanded="True" />
-                <Node name="Concrete" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Presentation" expanded="True">
-              <Node name="Services" expanded="True">
-                <Node name="DrugStoreService.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="Drugstores" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Presentation PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

@@ -178,7 +178,7 @@ namespace Presentation.Services
                 }
 
                 druggist.Name = name;
-                druggist.Name = surname;
+                druggist.Surname = surname;
                 druggist.Age = age;
                 druggist.Experience = experience;
                 druggist.DrugStore = drugStore;
